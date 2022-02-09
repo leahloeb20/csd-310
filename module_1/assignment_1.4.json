@@ -1,0 +1,45 @@
+# User roles
+{
+    "user" : "Leah Loeb",
+    "roles": [
+        {
+            "role": "Read textbook"
+        },
+        {
+            "role": "Write discussion board post"  
+        },
+        {
+            "role": "Do homework assignments"
+        }
+    ]
+}
+# Users birthday
+{
+    "user": "Jimmy Mann",
+    "birthday": "January 9th, 1993"
+}
+
+# Users dependents 
+{
+    "user": "Albert Einstein",
+    "dependents": [
+        {
+            "name": "Alyssa Einstein",
+            "relationship": "wife"
+        },
+        {
+            "name": "Johnny Einstein",
+            "relationship": "son"
+        },
+        {
+            "name": "Sarah Einstein",
+            "relationship": "daughter"
+        },
+        {
+            "name": "Sam Einstein",
+            "relationship": "Son"
+        }
+    ]
+}
+
+

@@ -1,0 +1,29 @@
+{
+    "json": {
+        
+        "author": [
+            {
+                "author_first_name": "Leah",
+                "author_last_name": "Loeb",
+                "author_phone": "718-324-2345",
+                "author_email": "lherschmann@my365.bellevue.edu"
+            }
+        ],
+        "book": [
+            {
+                "book_isbn": "7652384GBJ",
+                "book_name": "How To Keep Your Computer Safe",
+                "book_price": "24.99"
+            }
+        ],
+        "publisher": [
+            {
+                "publisher_name": "Dolphin Publishers",
+                "publisher_code": "EWL92384",
+                "publisher_address": "300 Main Street, Miami Beach, FL 053822"
+            }
+        ]
+        
+    }
+
+}

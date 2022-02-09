@@ -1,0 +1,24 @@
+<diagram program="umletino" version="14.4.0-SNAPSHOT"><zoom_level>10</zoom_level><help_text>Space for diagram notes</help_text><element><id>UMLClass</id><coordinates><x>0</x><y>139</y><w>320</w><h>140</h></coordinates><panel_attributes>Author
+--
+{
+     "author_first_name": "Leah",
+     "author_last_name": "Loeb",
+     "author_phone": "718-324-2345",
+     "author_email": "lherschmann@my365.bellevue.edu"
+}</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>410</x><y>139</y><w>310</w><h>140</h></coordinates><panel_attributes>Book
+--
+ {
+         "book_isbn": "7652384GBJ",
+         "book_name": "How To Keep Your Computer Safe",
+          "book_price": "24.99"
+}
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>790</x><y>139</y><w>380</w><h>140</h></coordinates><panel_attributes>Publisher
+--
+{
+        "publisher_name": "Dolphin Publishers",
+        "publisher_code": "EWL92384",
+        "publisher_address": "300 Main Street, Miami Beach, FL 053822"
+}</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>310</x><y>210</y><w>120</w><h>30</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>100;10;10;10</additional_attributes></element><element><id>Text</id><coordinates><x>750</x><y>200</y><w>40</w><h>20</h></coordinates><panel_attributes>1.1
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>710</x><y>210</y><w>100</w><h>30</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>80;10;10;10</additional_attributes></element><element><id>Text</id><coordinates><x>370</x><y>200</y><w>40</w><h>30</h></coordinates><panel_attributes>1.1
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>580</x><y>270</y><w>460</w><h>110</h></coordinates><panel_attributes>lt=&lt;&lt;-
+</panel_attributes><additional_attributes>10;10;10;90;440;90;440;10</additional_attributes></element><element><id>Text</id><coordinates><x>590</x><y>330</y><w>30</w><h>30</h></coordinates><panel_attributes>1.*</panel_attributes><additional_attributes></additional_attributes></element></diagram>

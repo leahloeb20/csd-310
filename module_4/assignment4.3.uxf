@@ -1,0 +1,26 @@
+<diagram program="umletino" version="14.4.0-SNAPSHOT"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>30</x><y>120</y><w>220</w><h>100</h></coordinates><panel_attributes>Student Fields:
+
+--
+**student_id:**
+--
+first_name:
+--
+last_name:</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>330</x><y>120</y><w>210</w><h>120</h></coordinates><panel_attributes>Enrollment Fields:
+
+--
+term:
+--
+gpa:
+--
+start_date:
+--
+end_date:</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>610</x><y>120</y><w>210</w><h>120</h></coordinates><panel_attributes>Course Fields:
+
+--
+**course_id:**
+--
+description:
+--
+instructor:
+--
+grade:</panel_attributes><additional_attributes></additional_attributes></element></diagram>

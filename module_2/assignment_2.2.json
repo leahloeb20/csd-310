@@ -1,0 +1,31 @@
+{
+    "json": {
+        
+        "customer fields": [
+            {
+                "_id": "7652384",
+                "first_name": "Leah",
+                "last_name": "Loeb",
+                "date_of_birth": "May 2nd, 1978",
+                "user_name": "leahloeb20"
+            }
+        ],
+        "invoice fields": [
+            {
+                "_id": "INVO29303",
+                "date_created": "January 17th, 2022",
+                "date_shipped": "January 27th, 2022",
+                "subtotal": "$119.24"
+            }
+        ],
+        "line item fields": [
+            {
+                "_id": "11102",
+                "name": "FrisbeeNet",
+                "price": "$39.99",
+                "quantity": "4"
+            }
+        ] 
+    }
+
+}

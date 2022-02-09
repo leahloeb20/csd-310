@@ -1,0 +1,36 @@
+{
+    "json": {
+        
+        "user": [
+            {
+                "user_id": "7652384",
+                "first_name": "Leah",
+                "last_name": "Loeb"
+            }
+        ],
+        "link_user_role": [
+            {
+                "user_id": "7652384",
+                "role": "cybersecurity analyst"
+            }
+        ],
+        "role": [
+            {
+                "role": "cybersecurity analyst"
+            }
+        ],
+        "link_role_permission": [
+            {
+                "role": "cybersecurity analyst",
+                "permission": "admin"
+            }
+        ],
+        "permission": [
+            {
+                "permission": "admin"
+            }
+        ]
+        
+    }
+
+}

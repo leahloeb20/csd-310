@@ -1,0 +1,29 @@
+{
+    "json": {
+        
+        "student fields": [
+            {
+                "student_id": "7652384",
+                "first_name": "Leah",
+                "last_name": "Loeb"
+            }
+        ],
+        "enrollment fields": [
+            {
+                "term": "Spring 2022",
+                "gpa": "3.6",
+                "start_date": "January 17th, 2022",
+                "end_date": "April 2nd, 2022"
+            }
+        ],
+        "course fields": [
+            {
+                "course_id": "CYBR410",
+                "description": "Course on relational and non relational databases",
+                "instructor": "Prof. Lappe",
+                "grade": "A+"
+            }
+        ] 
+    }
+
+}
