@@ -55,4 +55,5 @@ except mysql.connector.Error as err:
     else:
         print(err)
 finally:
+    db = mysql.connector.connect(**config)
     db.close()
