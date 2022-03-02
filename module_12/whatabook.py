@@ -18,7 +18,7 @@ config = {
 def show_menu():
     print("\n       --- MAIN MENU ---")
     print("Please choose one:\n")
-    print ("1. Books\n2. Store Locations\n3. My Account\n4. Exit Program\n")
+    print ("1. View Books\n2. View Store Locations\n3. My Account\n4. Exit Program\n")
     
     try:
         choice = int(input("Please choose an option: \n"))
@@ -59,7 +59,7 @@ def validate_user():
 def show_account_menu():
     try:
         print ("\n --- ACCOUNT MENU ---")
-        print ("1. Wishlist\n2. Add Book\n3. Main Menu\n4. Exit Program")
+        print ("1. Wishlist\n2. Add Book\n3. Main Menu")
         account_choice = int(input("Please choose an option: \n"))
         return account_choice
     except ValueError:
@@ -121,9 +121,6 @@ try:
                     print("\n   Book Id: {} was added to your wishlist.".format(book_id))
                 if account_option == 3:
                     account_option = show_account_menu()
-                if account_option == 4:
-                    print("\nGoodbye.")
-                    sys.exit(0)
                 if account_option < 0 or user_selection >3:
                     print("\n Invalid option, please retry...")
                 account_option = show_account_menu()
