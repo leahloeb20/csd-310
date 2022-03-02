@@ -2,11 +2,13 @@
 #03/01/2022
 #WhatABook Final Project
 
+#import statements
 from distutils.command.config import config
 import mysql.connector 
 from mysql.connector import errorcode
 import sys
 
+#database connetion
 config = {
     "user": "whatabook_user",
     "password": "MySQL8IsGreat!",
@@ -15,6 +17,7 @@ config = {
     "raise_on_warnings": True
 }
 
+#main menu
 def show_menu():
     print("\n       --- MAIN MENU ---")
     print("Please choose one:\n")
@@ -28,6 +31,7 @@ def show_menu():
         print("\n Invalid number. Goodbye.")
         sys.exit(0)
 
+#show available whatabook books 
 def show_books(_cursor):
     _cursor.execute("SELECT book_id, book_name, author, details from book")
     books = _cursor.fetchall()
@@ -36,6 +40,7 @@ def show_books(_cursor):
     for book in books:
         print("  Book ID: {}\n  Book Name: {}\n  Author: {}\n".format(book[0], book[1], book[2]))
 
+#show whatabook locations
 def show_locations(_cursor):
     
     _cursor.execute("SELECT store_id, locale from store")
@@ -45,6 +50,7 @@ def show_locations(_cursor):
     for location in locations:
         print(" Locale: {}\n".format(location[1]))
 
+#check which user/ if user is valid
 def validate_user():
     try:
         user_id = int(input("\nEnter a USER ID: "))
@@ -56,6 +62,7 @@ def validate_user():
         print("\n Invalid number. Goodbye.")
         sys.exit(0)
 
+#display user account information
 def show_account_menu():
     try:
         print ("\n --- ACCOUNT MENU ---")
@@ -66,6 +73,7 @@ def show_account_menu():
         print("\n Invalid number. Goodbye.")
         sys.exit(0)
 
+#display the users wishlist
 def show_wishlist(_cursor, _user_id):
     _cursor.execute("SELECT user.user_id, user.first_name, user.last_name, book.book_id, book.book_name, book.author " +
                     "FROM wishlist " +
@@ -79,6 +87,7 @@ def show_wishlist(_cursor, _user_id):
     for book in wishlist:
         print("Book Name: {}\n Author: {}\n".format(book[4], book[5]))
 
+#display which books can be added to wishlist
 def show_book_to_add (_cursor, _user_id):
     query = ("SELECT book_id, book_name, author, details " 
             "FROM book "
@@ -91,9 +100,11 @@ def show_book_to_add (_cursor, _user_id):
     for book in books_to_add:
         print("    Book Id: {}\n    Book Name: {}\n".format(book[0], book[1]))
 
+#add the selected book to wishlist
 def add_book_to_wishlist (_cursor, _user_id, _book_id):
    _cursor.execute("INSERT INTO wishlist(user_id, book_id) VALUES({}, {})".format(_user_id, _book_id))
 
+#check over users selections and direct to proper result
 try:
     db = mysql.connector.connect(**config)
     cursor = db.cursor()
@@ -129,6 +140,7 @@ try:
         user_selection = show_menu()
     print("\n\nProgram terminated. Goodbye.")
 
+#if error
 except mysql.connector.Error as err:
     if err.errno == errorcode.ER_ACCESS_DENIED_ERROR:
         print(" The supplied username or password are invalid")
@@ -138,5 +150,6 @@ except mysql.connector.Error as err:
         
     else:
         print(err)
+#close program        
 finally:
     db.close()
